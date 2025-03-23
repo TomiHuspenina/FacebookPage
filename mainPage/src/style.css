@@ -1,6 +1,5 @@
-
 body {
-  background-image: url('/public/images/FondoCasino1.webp'); /* Ruta de la imagen */
+  background-image: url('/images/FondoCasino1.webp'); /* Ruta de la imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,69 +11,103 @@ body {
 }
 
 .mainContent {
-  background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
-  padding: 30px;
-  border-radius: 12px;
+  background-color: #b8d5eb;
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  max-width: 500px;
+  font-family: Arial, sans-serif;
+  padding: 20px;  /* Agrega espacio dentro del contenedor */
+  border-radius: 20px;  /* Bordes redondeados */
+  min-height: 80vh;  /* Aumenta la altura mínima */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Colores llamativos para los títulos */
+h2 {
+  color: #ff4500; /* Naranja fuerte */
+  text-shadow: 2px 2px 5px rgba(255, 69, 0, 0.5);
+  font-size: 24px;
+}
+
+/* Animación de latido (crecer y decrecer) */
+@keyframes latido {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Aplicar animación al botón de WhatsApp */
+.whatsapp-button-container {
+  animation: latido 1.5s infinite;
+}
+
+/* Estilos del botón */
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.whatsapp-icon {
+  margin-right: 10px;
 }
 
 button {
   border: none;
   background: none;
+  padding: 0;
 }
 
-button a {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #25D366; /* Color de WhatsApp */
-  color: white;
+/* Animación para el texto de "MÍNIMO DE CARGA $3000" */
+.animated-text {
   font-size: 18px;
   font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  color: #d32f2f; /* Rojo fuerte */
+  animation: latido 1.5s infinite;
 }
 
-button a:hover {
-  background: #1EBE5D; /* Un poco más oscuro al pasar el mouse */
-}
-
-/* Caja para los anuncios */
-.advertisements {
-  margin-top: 20px;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  border-radius: 8px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Botón de WhatsApp con icono */
-.whatsappButton {
+/* Estilos de las cajas de mensaje */
+.info-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 12px 24px;
-  background: #25D366;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
+  padding: 15px;
+  margin: 10px auto;
   border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.whatsappButton:hover {
-  background: #1EBE5D;
+/* Caja 1 - Transferencias */
+.message1-box {
+  background-color: #e3f2fd; /* Azul claro */
+  color: #0d47a1;
 }
 
-/* Icono de WhatsApp */
-.whatsapp-icon {
-  font-size: 24px;
+/* Caja 2 - Atención 24h */
+.message2-box {
+  background-color: #fff3e0; /* Naranja claro */
+  color: #e65100;
+}
+
+.info-box p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
 }

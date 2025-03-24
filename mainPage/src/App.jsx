@@ -3,8 +3,8 @@ import "./style.css";
 import { FaWhatsapp, FaUniversity, FaClock } from "react-icons/fa"; 
 
 export default function App() {
-    const mensaje = "Hola, me gustaría crear un usuario, me llamo...";
-    const telefono = 5493517437218;
+    const mensaje = "Hola, me gustaría crear un usuario, me llamo ";
+    const telefono = 5493518503894;
 
     return (
         <div className="mainContent">
@@ -29,7 +29,7 @@ export default function App() {
             </div>
             <div className="info-box message1-box">
                 <p>
-                    <FaUniversity className="icon" /> SE ACEPTA TRANSFERENCIAS
+                    <FaUniversity className="icon" /> SE ACEPTA ÚNICAMENTE TRANSFERENCIAS
                 </p>
             </div>
             <div className="info-box message2-box">

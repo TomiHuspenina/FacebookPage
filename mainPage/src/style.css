@@ -11,7 +11,7 @@ body {
 }
 
 .mainContent {
-  background-color: #b8d5eb;
+  background-color: #ac3a3a;
   text-align: center;
   font-family: Arial, sans-serif;
   padding: 20px;  /* Agrega espacio dentro del contenedor */
@@ -26,13 +26,13 @@ body {
 
 /* Colores llamativos para los títulos */
 h2 {
-  color: #ff4500; /* Naranja fuerte */
-  text-shadow: 2px 2px 5px rgba(255, 69, 0, 0.5);
+  color: #000000; /* Naranja fuerte */
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
   font-size: 24px;
 }
 
 /* Animación de latido (crecer y decrecer) */
-@keyframes latido {
+@keyframes latido_whatsapp {
   0% { transform: scale(1); }
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
@@ -40,7 +40,7 @@ h2 {
 
 /* Aplicar animación al botón de WhatsApp */
 .whatsapp-button-container {
-  animation: latido 1.5s infinite;
+  animation: latido_whatsapp 1.5s infinite;
 }
 
 /* Estilos del botón */
@@ -71,8 +71,7 @@ button {
 .animated-text {
   font-size: 18px;
   font-weight: bold;
-  color: #d32f2f; /* Rojo fuerte */
-  animation: latido 1.5s infinite;
+  color: #000000; 
 }
 
 /* Estilos de las cajas de mensaje */
